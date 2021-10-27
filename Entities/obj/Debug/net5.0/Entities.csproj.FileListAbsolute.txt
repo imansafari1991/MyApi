@@ -1,0 +1,15 @@
+G:\My Project\MyApi\Entities\bin\Debug\net5.0\Entities.deps.json
+G:\My Project\MyApi\Entities\bin\Debug\net5.0\Entities.dll
+G:\My Project\MyApi\Entities\bin\Debug\net5.0\ref\Entities.dll
+G:\My Project\MyApi\Entities\bin\Debug\net5.0\Entities.pdb
+G:\My Project\MyApi\Entities\bin\Debug\net5.0\Common.dll
+G:\My Project\MyApi\Entities\bin\Debug\net5.0\Common.pdb
+G:\My Project\MyApi\Entities\obj\Debug\net5.0\Entities.csproj.AssemblyReference.cache
+G:\My Project\MyApi\Entities\obj\Debug\net5.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+G:\My Project\MyApi\Entities\obj\Debug\net5.0\Entities.AssemblyInfoInputs.cache
+G:\My Project\MyApi\Entities\obj\Debug\net5.0\Entities.AssemblyInfo.cs
+G:\My Project\MyApi\Entities\obj\Debug\net5.0\Entities.csproj.CoreCompileInputs.cache
+G:\My Project\MyApi\Entities\obj\Debug\net5.0\Entities.dll
+G:\My Project\MyApi\Entities\obj\Debug\net5.0\ref\Entities.dll
+G:\My Project\MyApi\Entities\obj\Debug\net5.0\Entities.pdb
+G:\My Project\MyApi\Entities\obj\Debug\net5.0\Entities.csproj.CopyComplete
