@@ -15,7 +15,6 @@ G:\My Project\MyApi\WebFramework\obj\Debug\net5.0\WebFramework.GeneratedMSBuildE
 G:\My Project\MyApi\WebFramework\obj\Debug\net5.0\WebFramework.AssemblyInfoInputs.cache
 G:\My Project\MyApi\WebFramework\obj\Debug\net5.0\WebFramework.AssemblyInfo.cs
 G:\My Project\MyApi\WebFramework\obj\Debug\net5.0\WebFramework.csproj.CoreCompileInputs.cache
-G:\My Project\MyApi\WebFramework\obj\Debug\net5.0\WebFramework.csproj.CopyComplete
 G:\My Project\MyApi\WebFramework\obj\Debug\net5.0\WebFramework.dll
 G:\My Project\MyApi\WebFramework\obj\Debug\net5.0\ref\WebFramework.dll
 G:\My Project\MyApi\WebFramework\obj\Debug\net5.0\WebFramework.pdb

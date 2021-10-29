@@ -70,3 +70,6 @@ G:\My Project\MyApi\MyApi\obj\Debug\net5.0\MyApi.pdb
 G:\My Project\MyApi\MyApi\obj\Debug\net5.0\MyApi.genruntimeconfig.cache
 G:\My Project\MyApi\MyApi\bin\Debug\net5.0\Humanizer.dll
 G:\My Project\MyApi\MyApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+G:\My Project\MyApi\MyApi\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+G:\My Project\MyApi\MyApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+G:\My Project\MyApi\MyApi\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll

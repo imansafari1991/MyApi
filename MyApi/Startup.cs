@@ -1,4 +1,5 @@
 using Data;
+using Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -37,6 +38,8 @@ namespace MyApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MyApi", Version = "v1" });
             });
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped<IUserRepository, UserRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
