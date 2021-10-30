@@ -2,7 +2,7 @@
 using Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
+using MyApi.Model;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
@@ -42,23 +42,23 @@ namespace MyApi.Controllers
             return user;
         }
 
-        //[HttpPost]
-        //public async Task<ApiResult<User>> Create(UserDto userDto, CancellationToken cancellationToken)
-        //{
-        //    //var exists = await userRepository.TableNoTracking.AnyAsync(p => p.UserName == userDto.UserName);
-        //    //if (exists)
-        //    //    return BadRequest("نام کاربری تکراری است");
+        [HttpPost]
+        public async Task<ApiResult<User>> Create(UserDto userDto, CancellationToken cancellationToken)
+        {
+            var exists = await userRepository.TableNoTracking.AnyAsync(p => p.UserName == userDto.UserName);
+            if (exists)
+                return BadRequest("نام کاربری تکراری است");
 
-        //    var user = new User
-        //    {
-        //        Age = userDto.Age,
-        //        FullName = userDto.FullName,
-        //        Gender = userDto.Gender,
-        //        UserName = userDto.UserName
-        //    };
-        //    await userRepository.AddAsync(user, userDto.Password, cancellationToken);
-        //    return user;
-        //}
+            var user = new User
+            {
+                Age = userDto.Age,
+                FullName = userDto.FullName,
+                Gender = userDto.Gender,
+                UserName = userDto.UserName
+            };
+            await userRepository.AddAsync(user, userDto.Password, cancellationToken);
+            return user;
+        }
 
         [HttpPut]
         public async Task<ActionResult> Update(int id, User user, CancellationToken cancellationToken)

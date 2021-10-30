@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.AspNetCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WebFramework.Api;
+using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace WebFramework.Filters
 {
@@ -31,9 +32,10 @@ namespace WebFramework.Filters
             else if (context.Result is BadRequestObjectResult badRequestObjectResult)
             {
                 var message = badRequestObjectResult.Value.ToString();
-                if (badRequestObjectResult.Value is SerializableError errors)
+              
+                if (badRequestObjectResult.Value is ValidationProblemDetails errors)
                 {
-                    var errorMessages = errors.SelectMany(p => (string[])p.Value).Distinct();
+                    var errorMessages = errors.Errors.SelectMany(p => (string[])p.Value).Distinct();
                     message = string.Join(" | ", errorMessages);
                 }
                 var apiResult = new ApiResult(false, ApiResultStatusCode.BadRequest, message);

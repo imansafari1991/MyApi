@@ -1,5 +1,6 @@
 ﻿using Common.Utilities;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -57,7 +58,7 @@ namespace WebFramework.Api
         where TData:class
     {
 
-
+        [JsonProperty(NullValueHandling=NullValueHandling.Ignore)]
         public TData Data { get; set; }
 
         public ApiResult(bool isSuccess,ApiResultStatusCode statusCode,TData data,string message=null):base(isSuccess,statusCode,message)
