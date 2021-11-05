@@ -1,4 +1,6 @@
-﻿using Data.Repositories;
+﻿using Common.Exceptions;
+using Data.Repositories;
+using ElmahCore;
 using Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -38,7 +40,7 @@ namespace MyApi.Controllers
         {
             var user = await userRepository.GetByIdAsync(cancellationToken, id);
             if (user == null)
-                return NotFound();
+                throw new NotFoundException("کاربر یافت نشد");
             return user;
         }
 
@@ -48,7 +50,7 @@ namespace MyApi.Controllers
             //var exists = await userRepository.TableNoTracking.AnyAsync(p => p.UserName == userDto.UserName);
             //if (exists)
             //    return BadRequest("نام کاربری تکراری است");
-
+            HttpContext.RiseError(new System.Exception("متد Create فراخوانی شد"));
             var user = new User
             {
                 Age = userDto.Age,

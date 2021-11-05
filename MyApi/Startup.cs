@@ -16,6 +16,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebFramework.Middlewares;
 
+using ElmahCore.Mvc;
+using ElmahCore.Sql;
+
 namespace MyApi
 {
     public class Startup
@@ -39,6 +42,12 @@ namespace MyApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MyApi", Version = "v1" });
             });
+
+            services.AddElmah<SqlErrorLog>(options=>
+            {
+                options.ConnectionString = Configuration.GetConnectionString("Elmah");
+                options.Path = "/elmah-errors";
+            });
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IUserRepository, UserRepository>();
         }
@@ -54,7 +63,7 @@ namespace MyApi
                 //app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyApi v1"));
-            
+            app.UseElmah();
          
             app.UseHttpsRedirection();
 
