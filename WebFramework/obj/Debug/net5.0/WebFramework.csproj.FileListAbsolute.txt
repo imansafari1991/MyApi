@@ -18,3 +18,4 @@ G:\My Project\MyApi\WebFramework\obj\Debug\net5.0\WebFramework.csproj.CoreCompil
 G:\My Project\MyApi\WebFramework\obj\Debug\net5.0\WebFramework.dll
 G:\My Project\MyApi\WebFramework\obj\Debug\net5.0\ref\WebFramework.dll
 G:\My Project\MyApi\WebFramework\obj\Debug\net5.0\WebFramework.pdb
+G:\My Project\MyApi\WebFramework\obj\Debug\net5.0\WebFramework.csproj.CopyComplete

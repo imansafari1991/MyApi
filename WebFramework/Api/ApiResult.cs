@@ -1,4 +1,5 @@
-﻿using Common.Utilities;
+﻿using Common;
+using Common.Utilities;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System;
@@ -99,17 +100,5 @@ namespace WebFramework.Api
             return new ApiResult<TData>(false, ApiResultStatusCode.Success,null, result.Content);
         }
     }
-    public enum ApiResultStatusCode
-    {
-        [Display(Name="عملیات با موفقیت انجام شد")]
-        Success=0,
-        [Display(Name = "خطایی در سرور رخ داده است")]
-        ServerError =1,
-        [Display(Name = "پارامترهای ارسالی  معتبر نیستید")]
-        BadRequest =2,
-        [Display(Name = "یافت نشد")]
-        NotFound =3,
-        [Display(Name = "لیست خالی است")]
-        ListEmpty =4
-    }
+  
 }

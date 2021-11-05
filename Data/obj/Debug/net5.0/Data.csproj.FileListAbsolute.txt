@@ -17,3 +17,4 @@ G:\My Project\MyApi\Data\obj\Debug\net5.0\Data.dll
 G:\My Project\MyApi\Data\obj\Debug\net5.0\ref\Data.dll
 G:\My Project\MyApi\Data\obj\Debug\net5.0\Data.pdb
 G:\My Project\MyApi\Data\obj\Debug\net5.0\Data.genruntimeconfig.cache
+G:\My Project\MyApi\Data\obj\Debug\net5.0\Data.csproj.CopyComplete

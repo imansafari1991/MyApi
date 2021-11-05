@@ -14,6 +14,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebFramework.Middlewares;
 
 namespace MyApi
 {
@@ -44,14 +45,17 @@ namespace MyApi
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
+        {//Custom Middlware
+            app.UseCustomExceptionHandler();
+
+
+
+          
+                //app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MyApi v1"));
-            }
-
+            
+         
             app.UseHttpsRedirection();
 
             app.UseRouting();

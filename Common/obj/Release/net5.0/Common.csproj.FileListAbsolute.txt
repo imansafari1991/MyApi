@@ -1,0 +1,11 @@
+G:\My Project\MyApi\Common\bin\Release\net5.0\Common.deps.json
+G:\My Project\MyApi\Common\bin\Release\net5.0\Common.dll
+G:\My Project\MyApi\Common\bin\Release\net5.0\ref\Common.dll
+G:\My Project\MyApi\Common\bin\Release\net5.0\Common.pdb
+G:\My Project\MyApi\Common\obj\Release\net5.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+G:\My Project\MyApi\Common\obj\Release\net5.0\Common.AssemblyInfoInputs.cache
+G:\My Project\MyApi\Common\obj\Release\net5.0\Common.AssemblyInfo.cs
+G:\My Project\MyApi\Common\obj\Release\net5.0\Common.csproj.CoreCompileInputs.cache
+G:\My Project\MyApi\Common\obj\Release\net5.0\Common.dll
+G:\My Project\MyApi\Common\obj\Release\net5.0\ref\Common.dll
+G:\My Project\MyApi\Common\obj\Release\net5.0\Common.pdb

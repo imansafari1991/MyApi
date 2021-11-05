@@ -72,4 +72,3 @@ G:\My Project\MyApi\MyApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.
 G:\My Project\MyApi\MyApi\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
 G:\My Project\MyApi\MyApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
 G:\My Project\MyApi\MyApi\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
-G:\My Project\MyApi\MyApi\obj\Debug\net5.0\MyApi.csproj.CopyComplete
